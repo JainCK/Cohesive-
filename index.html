@@ -1,1 +1,117 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scripts/styles.css">
+  <script src="scripts/index.js" defer></script>
+  <title>Cohesive Consulting Solutions</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to Cohesive Consulting Solutions</h1>
+      <p>Providing expert financial advice, tax planning, and accounting services in Kottayam.</p>
+      <p>Open today until 5:00 PM</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>
+          <h3>Financial Consulting</h3>
+          <p>We offer comprehensive financial consulting services to help you manage your assets and investments effectively.</p>
+        </li>
+        <li>
+          <h3>Tax Planning</h3>
+          <p>Our experienced tax consultants will assist you in optimizing your tax strategies and minimizing tax liabilities.</p>
+        </li>
+        <li>
+          <h3>Accounting Services</h3>
+          <p>We provide professional accounting services, including bookkeeping, financial statement preparation, and more.</p>
+        </li>
+      </ul>
+      <a href="#" class="get-quote-button">Get Quote</a>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>A premier firm of Financial and Accounting professionals , rendering a wide range of professional services to clients in India & abroad.</p>
+    </section>
+    <section id="contact">
+    <div id="quote-popup" class="popup">
+        <div class="popup-content">
+          <h2>Get a Quote</h2>
+          <p>Make sure to avoid including any sensitive information you don't want to share with this business.</p>
+          <form action="#" method="POST">
+            <label for="quote-name">Name:</label>
+            <input type="text" id="quote-name" name="quote-name" required placeholder="Enter your name">
+            
+            <label for="quote-email">Email:</label>
+            <input type="email" id="quote-email" name="quote-email" required placeholder="Enter your email">
+            
+            <label for="quote-phone">Phone Number:</label>
+            <input type="tel" id="quote-phone" name="quote-phone" required placeholder="Enter your phone number">
+            
+            <label for="quote-message">How can we help you?</label>
+            <textarea id="quote-message" name="quote-message" rows="4" maxlength="1000" required placeholder="Enter your message (max 1000 characters)"></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>  
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <a href="tel:+123456789">
+        <button>Call Now</button>
+      </a>
+    </div>
+    <div class="footer-section">
+      <h3>Address</h3>
+      <p>123 Main Street, City, State, ZIP</p>
+      <a href="https://www.google.com/maps?q=123+Main+Street%2C+City%2C+State%2C+ZIP" target="_blank">
+        <button>Get Directions</button>
+      </a>
+    </div>
+    <p class="footer-section">
+      <h3>Business Hours</h3>
+      <p>Mon:	9:00 AM – 5:00 PM</p>
+      <p>Tue:	9:00 AM – 5:00 PM</p>
+      <p>Wed:	9:00 AM – 5:00 PM</p>
+      <p>Thu:	9:00 AM – 5:00 PM</p>
+      <p>Fri:	9:00 AM – 5:00 PM</p>
+      <p>Sat:	9:00 AM – 5:00 PM</p>
+      <p>Sun:	Closed</p>
+    </div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      const mapElement = document.getElementById('map');
+      const options = {
+        center: { lat: 37.7749, lng: -122.4194 }, // Update with your office coordinates
+        zoom: 15, // Adjust the zoom level as needed
+      };
+      const map = new google.maps.Map(mapElement, options);
+    }
+  </script>
+</body>
+</html>
+
