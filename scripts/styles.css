@@ -1,1 +1,336 @@
- 
+ /* Reset styles */
+  /* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end; /* Align elements to the right */
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+  }
+  nav ul li a:hover {
+    color: #aaa;
+  }
+  
+  /* Main */
+  main {
+    padding: 50px;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+
+  /* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    margin-bottom: 20px;
+  }
+  
+  #home .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  #home .cta-button:hover {
+    background-color: #555;
+  }
+  
+  /* Add space between bottom element */
+  #home > *:last-child {
+    margin-bottom: 40px;
+  }
+  
+  
+  .cta-button, .get-quote-button, button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover, .get-quote-button:hover, button:hover {
+    background-color: #555;
+  }
+
+  #services {
+    text-align: center;
+  }
+
+  #services ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #services li {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  
+  #services li:hover {
+    transform: translateY(-5px);
+  }
+  
+  #services h3 {
+    margin-bottom: 10px;
+  }
+
+  #services .quote-section {
+    margin-top: 40px;
+  }
+  
+  #services .quote-section p {
+    margin-bottom: 10px;
+  }
+  
+  #services .get-quote-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  #services .get-quote-button:hover {
+    background-color: #777;
+  }
+  
+  /* About Section */
+#about {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    margin-bottom: 20px;
+  }
+  
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-section:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .footer-section button:hover {
+    background-color: #777;
+  }
+  
+  .business-hours {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .business-hours li {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    #services li {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #services li {
+      width: 100%;
+    }
+  }
+  
+
+  /* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .popup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+  }
+  
+  .popup input[type="text"],
+  .popup input[type="email"],
+  .popup input[type="tel"],
+  .popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .popup textarea {
+    resize: vertical;
+  }
+  
+  .popup button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #555;
+  }
+  
+  .close-popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #777;
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .popup-content {
+      width: 90%;
+      max-width: 90%;
+    }
+  }
+  
