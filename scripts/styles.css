@@ -2,7 +2,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700;1,900&family=Poppins:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Playfair+Display:ital,wght@1,500;1,700;1,900&family=Poppins:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -21,21 +21,21 @@ body {
 
 /* Header */
 header {
-  background-color: #d08787;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
+  background-color: #6ACFC7;
 }
 nav {
   display: flex;
   justify-content: flex-end; /* Align elements to the right */
   padding: 5px;
-  background-color: #d08787;
+  background-color: #6ACFC7;
 }
 
 nav p.logo{
     margin-right: auto;
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
 }
 
 nav ul {
@@ -51,8 +51,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 16px;
+  color: #000;
+  font-size: 18px;
   padding: 10px;
 }
 nav ul li a:hover {
@@ -70,6 +70,11 @@ h1, h2, h3 {
 
 p {
   margin-bottom: 20px;
+}
+
+.content p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
 /* Home Section */
@@ -111,7 +116,7 @@ p {
 
 #home p {
   margin-bottom: 20px;
-  color: #fff;
+  color: #333;
 }
 
 #home .cta-button {
@@ -303,18 +308,6 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 768px) {
-  #services li {
-    width: calc(50% - 20px);
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #services li {
-    width: 100%;
-  }
-}
 
 /* Popup */
 .popup {
@@ -387,4 +380,17 @@ footer {
   font-size: 24px;
   color: #777;
   cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  #services li {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #services li {
+    width: 100%;
+  }
 }
