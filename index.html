@@ -11,6 +11,11 @@
   <header>
     <nav>
         <p class="logo">Cohesive Consulting Services</p>
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       <ul>
         <li><a href="#quote-popup">Get Quote</a></li>
         <li><a href="#services">Services</a></li>
@@ -79,7 +84,7 @@
         <div class="popup-content">
           <h2>Get a Quote</h2>
           <p>Make sure to avoid including any sensitive information you don't want to share with this business.</p>
-          <form action="#" method="POST">
+          <form action="#" method="POST" novalidate>
             <label for="quote-name">Name:</label>
             <input type="text" id="quote-name" name="quote-name" required placeholder="Enter your name">
             
@@ -93,6 +98,7 @@
             <textarea id="quote-message" name="quote-message" rows="4" maxlength="1000" required placeholder="Enter your message (max 1000 characters)"></textarea>
             
             <button type="submit">Submit</button>
+            <button class="cancel-button">Cancel</button>
           </form>
         </div>
       </div>
