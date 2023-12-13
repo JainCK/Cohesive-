@@ -1,4 +1,4 @@
-# Cohesive Consultancy Solutions
+# Cohesive Consulting Solutions
 
 Welcome to the Cohesive Consultancy Solutions website! This responsive website is designed for a tax audit firm, providing essential information about services, contact details, and more. The project is built using HTML, CSS, and JavaScript, incorporating various features such as mail integration, video elements, basic services, and Google Map integration.
 
